@@ -46,7 +46,7 @@ AFRAME.registerComponent('csg-meshs', {
         return list;
     },
 
-    tick() {
+    update() {
         this.changed = false;
         const source = this.getBSPs(this.el.object3D);
         const keys = Object.keys(this.data).filter(key => this.data[key]);
